@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            border:5px solid rgb(122, 4, 138) 
+        }
+            input[type="password"]{
+                border:7px solid salmon
+            }
+            ul> li{
+                color:darkslateblue
+            }
+            h1 + p{
+                color:brown
+            }
+            p + p{
+                color:yellowgreen
+            }
+            a:hover{
+                color:blueviolet
+            }
+            li:nth-child(1) {
+                background-color:orangered
+            }
+            div:not(.class1) {
+                border: 10px blue solid;
+            }
+            .Before::before{
+                content:"UC"
+            }
+    </style>
+</head>
+<body>
+    <!--advanced selector-->
+    <!--attribute selector-->
+    <input type="text" placeholder="Enter name"><br><br>
+    <input type="password" placeholder="enter password">
+    <!--Child selectors-->
+    <ul>
+        <li>home</li>
+        <li>school</li>
+        <li>grade</li>
+    </ul>
+    <!--Sibling selector-->
+    <h1>sibling selector tag</h1>
+    <p>sibling</p>
+    <p>sibling</p>
+    <!--pseudo classes-->
+    <a href="#">ANY MESSAGEE</a>
+    <!--nth child-->
+    <ul>
+        <li>Home</li>
+        <li>school</li>
+    </ul>
+    <!--not selector-->
+    <div class="class1">Div 1</div>
+    <div class="class2">Div 2</div>
+    <!--pseudo element-->
+    <p class="Before">Before</p>
+    <p class="After">After</p>
+    <p class="Firstletter">first letter</p>
+</body>
+</html>
